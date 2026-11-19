@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#7DD3FC"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Outer circle with gradient -->
+  <circle cx="16" cy="16" r="15.5" fill="url(#g1)"/>
+  <!-- Subtle inner highlight -->
+  <circle cx="16" cy="16" r="15.5" fill="url(#g2)" opacity="0.08"/>
+  <!-- Inner orbital ring -->
+  <circle cx="16" cy="16" r="10.5" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+  <!-- Outer subtle ring -->
+  <circle cx="16" cy="16" r="13" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.75"/>
+  <!-- S letterform - clean, premium -->
+  <path d="M20.5 11.5C20.5 9.567 18.933 8 17 8H15C13.067 8 11.5 9.567 11.5 11.5C11.5 13.433 13.067 15 15 15H17C18.933 15 20.5 16.567 20.5 18.5C20.5 20.433 18.933 22 17 22H15C13.067 22 11.5 20.433 11.5 18.5"
+        stroke="white" stroke-width="2.2" stroke-linecap="round" fill="none" filter="url(#glow)" opacity="0.95"/>
+  <!-- Small accent dots at orbit intersections -->
+  <circle cx="26.5" cy="16" r="1.2" fill="rgba(255,255,255,0.6)"/>
+  <circle cx="5.5" cy="16" r="1.2" fill="rgba(255,255,255,0.6)"/>
+</svg>
